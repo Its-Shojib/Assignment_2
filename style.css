@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ***Navbar Sexction*** */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nav-title img {
+    width: 30%;
+}
+
+.nav-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.pink {
+    color: #FF42A5;
+}
+
+.nav-item ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item ul li {
+    list-style: none;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.nav-item ul li:last-child {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 12px;
+}
