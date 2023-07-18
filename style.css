@@ -89,10 +89,11 @@
 .small-text {
     color: #534C64;
     font-size: .8rem;
-    font-weight: 500;
+    font-weight: 300;
+    padding: 5px 0px;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -126,7 +127,48 @@
 .banner-img {
     max-width: 700px;
 }
-.banner-img img{
+
+.banner-img img {
     height: 100%;
     width: 100%;
+}
+
+
+/* ***Online Section*** */
+
+.online-content-title {
+    text-align: center;
+}
+
+.pink-gray {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-title {
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    gap: 25px;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.box img{
+    width: 100%;
+}
+.box .small-text{
+    padding-top: 10px;
+}
+
+***Footer Section***
+footer{
+    text-align: center;
 }
