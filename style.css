@@ -98,6 +98,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
+
 }
 
 .btn-1 {
@@ -110,6 +111,7 @@
     border: none;
     color: #FFF;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    cursor: pointer;
 }
 
 .btn-2 {
@@ -122,6 +124,7 @@
     border: none;
     color: #FFF;
     background: #4EC5F7;
+    cursor: pointer;
 }
 
 .banner-img {
@@ -154,21 +157,74 @@
     padding-bottom: 10px;
 }
 
-.card{
+.card {
     display: grid;
-    grid-template-columns: repeat(4,250px);
+    grid-template-columns: repeat(4, 250px);
     gap: 25px;
     justify-content: center;
     padding: 30px 0px;
 }
-.box img{
+
+.box img {
     width: 100%;
 }
-.box .small-text{
+
+.box .small-text {
     padding-top: 10px;
 }
 
-***Footer Section***
-footer{
+/* ***Footer Section***  */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background: #0B0223;
+    padding: 10px 200px;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #FFF;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.text {
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 10px;
+    align-items: flex-start;
+    gap: 20px;
+}
+.text p{
+    color: #FFF;
+}
+.icon {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    padding: 10px 100px;
+    align-items: flex-start;
+}
+.policy{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+.policy p{
+    color: rgba(255, 255, 255, 0.60);
+}
+.last-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
