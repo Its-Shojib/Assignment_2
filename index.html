@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Gamers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./asset/Frame.png" type="image/x-icon">
 </head>
 <body>
     <header>
+        <!-- /* ***Navbar Sexction Start*** */ -->
             <nav class="navbar">
                 <div class="nav-title">
                     <img src="./asset/Frame.png" alt="">
@@ -23,7 +24,9 @@
                     </ul>
                 </div>
             </nav>
-            <div class="banner">
+            <!-- /* ***Navbar Sexction Ended*** */ -->
+            <!-- /* ***Banner Section Start*** */ -->
+            <div class="banner" id="banner" >
                 <div class="baner-back">
                     <div class="banner-text">
                         <h2>Play Like The</h2>
@@ -47,41 +50,77 @@
                     <img src="./asset/Group 18.png" alt="">
                 </div>
             </div>
+            <!-- /* ***Banner Section Ended*** */ -->
     </header>
-    <main class="">
-        <div class="online">
-            <div class="online-content-title">
-                <h1 class="online-title">
-                    Online Games <span class="pink-gray">Funny Videos</span>
-                </h1>
-                <p class="small-text">
-                    A Collection of Hilarious Videos to Brighten Your Day
-                </p>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <img src="./asset/Rectangle 4.png" alt="">
-                    <p class="small-text">No Download. No Installs. Play games Instantly on Gamer.</p>
-                </div>
-                <div class="box">
-                    <img src="./asset/Rectangle 5.png" alt="">
-                    <p class="small-text">Did you score? #unblockedgames #school</p>
-                </div>
-                <div class="box">
-                    <div class="image-container">
-                        <img src="./asset/Rectangle 7.png" alt="">
-                    </div>
-                    <p class="small-text">Breaking game records like OG</p>
-                </div>
-                <div class="box">
-                    <img src="./asset/Rectangle 6.png" alt="">
-                    <p class="small-text">Busted gaming on school laptop, but you are still lit.</p>
+
+    <!-- /* ***Online Section Start*** */  -->
+   <section>
+    <div class="online-content">
+        <h1 class="content-title">
+            Online Games <span class="pink-gray">Funny Videos</span>
+        </h1>
+        <p class="small-text">A Collection of Hilarious Videos to Brighten Your Day</p>
+    </div>
+    <div class="online">
+        <div class="game-photo">
+            <div class="img-wrapper">
+                <img src="./asset/Rectangle 4.png" alt="">
+                <div class="overlay"></div>
+                <div class="social-link">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <p>Watch Now</p>
                 </div>
             </div>
+            <div class="content">
+                <p class="small-text">No Download. No Installs. Play games Instantly on Gamer</p>
+            </div>
         </div>
-        <div class="play-icon"><i class="fa-regular fa-circle-play" style="color: #d60c0c;"></i>
-            <span><br>Watch Now</span>
+        <div class="game-photo">
+            <div class="img-wrapper">
+                <img src="./asset/Rectangle 5.png" alt="">
+                <div class="overlay"></div>
+                <div class="social-link">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <p>Watch Now</p>
+                </div>
+            </div>
+            <div class="content">
+                <p class="small-text">Did you score? #unblockedgames #school</p>
+            </div>
         </div>
+        <div class="game-photo">
+            <div class="img-wrapper">
+                <img src="./asset/Rectangle 7.png" alt="">
+                <div class="overlay"></div>
+                <div class="social-link">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <p>Watch Now</p>
+                </div>
+            </div>
+            <div class="content">
+                <p class="small-text">Breaking game records 
+                    like OG</p>
+            </div>
+        </div>
+        <div class="game-photo">
+            <div class="img-wrapper">
+                <img src="./asset/Rectangle 6.png" alt="">
+                <div class="overlay"></div>
+                <div class="social-link">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <p>Watch Now</p>
+                </div>
+            </div>
+            <div class="content">
+                <p class="small-text">Busted gaming on school laptop, but you are still lit.</p>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!-- /* ***Online Section Ended*** */ -->
+
+    <main>
+        <!-- /* ***Play Section Start*** */ -->
         <div class="play">
             <div class="play-text">
                 <h1 class="play-title">
@@ -101,6 +140,8 @@
                 </div>
             </div>
         </div>
+        <!-- /* ***Play Section Ended*** */ -->
+        <!-- /* ***Logo Section Start*** */ -->
         <div class="logo">
             <p class="logo-text">
                 <img src="./asset/Rectangle 11.png" alt="">
@@ -139,8 +180,9 @@
                 <span>Strategy Games</span>
             </p>
         </div>
-
+        <!-- /* ***Logo Section Ended*** */ -->
     </main>
+    <!-- /* ***Footer Section Start***  */ -->
     <footer >
         <div class="footer">
             <div class="footer-title">
@@ -185,6 +227,9 @@
                 </span>
             </div>
         </div>
+        <!-- /* ***Footer Section Ended***  */ -->
     </footer>
 </body>
 </html>
+
+<!-- ---------------Happy Codding------------------------ -->

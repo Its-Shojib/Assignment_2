@@ -1,3 +1,4 @@
+/* ---------Font Added--------- */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 
 * {
@@ -6,7 +7,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-/* ***Navbar Sexction*** */
+/* ***Navbar Sexction Start*** */
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -15,61 +16,56 @@
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     padding: 20px;
 }
-
 .nav-title {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
 }
-
 .nav-title img {
     width: 30%;
 }
-
 .nav-title h1 {
     font-size: 2.5rem;
     font-weight: 700;
 }
-
 .pink {
     color: #FF42A5;
 }
-
 .nav-item ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .nav-item ul li {
     list-style: none;
     padding: 0px 20px;
     cursor: pointer;
 }
-
 .nav-item ul li:last-child {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 12px;
 }
+/* ***Navbar Sexction End** */
 
-
-/* ***Banner Section*** */
-.banner {
+/* ***Banner Section Start*** */
+.banner{
+    background-image: url('./asset/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.banner{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 4rem;
     padding: 50px 230px;
     gap: 200px;
-}
-.baner-back{
-    background-image: url('./asset/Group\ 14.png'),linear-gradient(rgba(255,0,0,0),rgba(0,0,0,0));
 }
 .banner-text {
     max-width: auto;
 }
-
 .banner-text h2 {
     color: #0B0223;
     text-align: center;
@@ -87,22 +83,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .small-text {
     color: #534C64;
     font-size: .8rem;
     font-weight: 300;
     padding: 5px 0px;
 }
-
 .btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
-
 }
-
 .btn-1 {
     display: inline-flex;
     padding: 12px 30px;
@@ -128,68 +120,93 @@
     background: #4EC5F7;
     cursor: pointer;
 }
-
 .banner-img {
     max-width: 50%;
 }
-
 .banner-img img {
     height: 100%;
     width: 100%;
 }
+/* ***Banner Section Ended*** */
 
-
-/* ***Online Section*** */
-
-.online-content-title {
+/* ***Online Section Start*** */
+.online-content{
     text-align: center;
+    padding: 30px 0px;
 }
-
+.content-title {
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
 .pink-gray {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.online-title {
-    color: #0B0223;
-    font-size: 2.5rem;
-    font-weight: 700;
-    padding-bottom: 10px;
+.online{
+    padding: 20px 200px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
 }
-
-.card {
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    gap: 25px;
-    justify-content: center;
-    padding: 30px 0px;
-}
-.box img {
-    width: 100%;
-}
-
-.play-icon {
-    position: relative;
-    bottom: 240px;
+.game-photo {
     text-align: center;
-    margin-left: 276px;
+}
+.game-photo .img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.game-photo .overlay {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all .4s ease;
+    opacity: 0;
+}
+.game-photo .social-link {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s ease;
+    opacity: 0;
+}
+.game-photo:hover .overlay {
+    opacity: 1;
+    top: 0;
+}
+.game-photo:hover .social-link {
+    opacity: 1;
+    top: 50%;
+}
+.social-link{
     color: #F948B2;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
-.play-icon span{
-    font-weight: 600;
-    font-size: 1.5rem;
+.social-link i{
+    color:#FFF;
+    font-size: 1.8rem;
 }
-.play-icon i{
-    font-size: 30px;
+.content .small-text {
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: left;
 }
-.box .small-text {
-    padding-top: 10px;
+.img-wrapper img{
+    width: 250px;
+    height: 300px;
 }
+/* ***Online Section Ended*** */
 
 
-/* ***Play Section*** */
+/* ***Play Section Start*** */
 .play {
     display: flex;
     justify-content: center;
@@ -197,33 +214,27 @@
     align-items: center;
     padding: 10px 150px;
 }
-
 .play-text {
     max-width: 300px;
     padding-left: 100px;
 }
-
 .play-text .small-text {
     text-align: right;
 }
-
 .play-title {
     text-align: right;
     font-size: 2.2rem;
     font-weight: 700;
     padding-bottom: 10px;
 }
-
 .play-img {
     max-width: 500px;
     padding-left: 100px;
     padding-top: 50px;
 }
-
 .play-img>img {
     width: 100%;
 }
-
 .relative {
     position: relative;
     height: 200px;
@@ -231,13 +242,13 @@
     bottom: 170px;
     right: 70px;
 }
-
 .relative img {
     width: 100%;
 }
+/* ***Play Section Ended*** */
 
 
-/* ***Logo Section*** */
+/* ***Logo Section Start*** */
 .logo {
     text-align: center;
     display: flex;
@@ -250,14 +261,13 @@
     position: relative;
     bottom: 80px;
 }
-
 .logo-text {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 1rem;
+    transition: all ease-in 0.2s;
 }
-
 .logo-text:hover {
     border: 1px solid palevioletred;
     border-radius: 50px;
@@ -266,12 +276,10 @@
     font-weight: 600;
     padding:5px;
 }
+/* ***Logo Section Ended*** */
 
 
-
-
-/* ***Footer Section***  */
-
+/* ***Footer Section Start***  */
 footer {
     display: flex;
     justify-content: center;
@@ -280,7 +288,6 @@ footer {
     background: #0B0223;
     padding: 10px 200px;
 }
-
 .footer-title {
     display: flex;
     justify-content: center;
@@ -300,11 +307,9 @@ footer {
     align-items: flex-start;
     gap: 20px;
 }
-
 .text p {
     color: #FFF;
 }
-
 .icon {
     text-align: center;
     display: grid;
@@ -312,7 +317,6 @@ footer {
     padding: 10px 100px;
     align-items: flex-start;
 }
-
 .policy {
     text-align: center;
     display: grid;
@@ -320,22 +324,21 @@ footer {
     align-items: flex-start;
     padding: 10px 20px;
 }
-
 .policy p {
     color: rgba(255, 255, 255, 0.60);
 }
-
 .last-text {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.hide{
+/* ***Footer Section Ended***  */
+/* .hide{
     display: none;
-}
+} */
 
 
-
+/* ***Media Query Start*** */
 @media screen and (max-width:576px) {
     .navbar {
         padding: 20px;
@@ -357,9 +360,41 @@ footer {
     .banner-img {
         max-width: 70%;
     }
+    .card {
+        grid-template-columns: 300px;
+        gap: 25px;
+        padding: 30px 0px;
+    }
 
 
-
+    .play {
+        gap: 20px;
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+    .play-text {
+        max-width: 340px;
+        padding-left: 0px;
+    }
+    .play-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    .play-text .small-text {
+        text-align: center;
+    }
+    .play-img>img {
+        width: 90%;
+    }
+    .relative {
+        bottom: 110px;
+        right: 50px;
+    }
+    .relative img {
+        width: 80%;
+    }
     .logo {
     text-align: center;
     display: grid;
@@ -398,32 +433,5 @@ footer {
     .last-text {
         flex-direction: column;
     }
-    .play {
-        gap: 20px;
-        padding: 10px 10px;
-        flex-direction: column;
-    }
-    .play-text {
-        max-width: 340px;
-        padding-left: 0px;
-    }
-    .play-title {
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 700;
-        padding-bottom: 10px;
-    }
-    .play-text .small-text {
-        text-align: center;
-    }
-    .play-img>img {
-        width: 90%;
-    }
-    .relative {
-        bottom: 110px;
-        right: 50px;
-    }
-    .relative img {
-        width: 80%;
-    }
+    
 }
