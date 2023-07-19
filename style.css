@@ -63,9 +63,11 @@
     padding: 50px 230px;
     gap: 200px;
 }
-
+.baner-back{
+    background-image: url('./asset/Group\ 14.png'),linear-gradient(rgba(255,0,0,0),rgba(0,0,0,0));
+}
 .banner-text {
-    max-width: 400px;
+    max-width: auto;
 }
 
 .banner-text h2 {
@@ -128,7 +130,7 @@
 }
 
 .banner-img {
-    max-width: 700px;
+    max-width: 50%;
 }
 
 .banner-img img {
@@ -164,11 +166,24 @@
     justify-content: center;
     padding: 30px 0px;
 }
-
 .box img {
     width: 100%;
 }
 
+.play-icon {
+    position: relative;
+    bottom: 240px;
+    text-align: center;
+    margin-left: 276px;
+    color: #F948B2;
+}
+.play-icon span{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.play-icon i{
+    font-size: 30px;
+}
 .box .small-text {
     padding-top: 10px;
 }
@@ -313,4 +328,32 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* .hide{
+    display: none;
+} */
+
+
+
+@media screen and (max-width:576px) {
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-item ul {
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    .nav-item ul li{
+        padding-top: 15px;
+    }
+    .banner {
+        padding: 10px 10px;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .banner-img {
+        max-width: 70%;
+    }
 }
