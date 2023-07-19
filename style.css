@@ -276,7 +276,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 450px;
     background: #0B0223;
     padding: 10px 200px;
 }
@@ -397,5 +397,33 @@ footer {
     }
     .last-text {
         flex-direction: column;
+    }
+    .play {
+        gap: 20px;
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+    .play-text {
+        max-width: 340px;
+        padding-left: 0px;
+    }
+    .play-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    .play-text .small-text {
+        text-align: center;
+    }
+    .play-img>img {
+        width: 90%;
+    }
+    .relative {
+        bottom: 110px;
+        right: 50px;
+    }
+    .relative img {
+        width: 80%;
     }
 }
