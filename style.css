@@ -494,3 +494,54 @@ footer {
         flex-direction: column;
     }
 }
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 10px; 
+        gap: 2px;
+    }
+    .online {
+        padding: 20px 10px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        justify-content: space-between;
+    }
+    .game-photo .overlay {
+        left: 18%;
+        width: 64%;
+    }
+    .play {
+        gap: 10px;
+        padding: 10px 60px;
+    }
+    .play-text {
+        max-width: 350px;
+        padding-left: 15px;
+    }
+    .play-title {
+        text-align:center;
+        font-size: 2rem;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0px 60px;
+        gap: 90px;
+    }
+    .text{
+        gap:50px;
+    }
+    .icon{
+        font-size: 2rem;
+        padding: 10px 0px;
+    }
+    
+}
