@@ -16,46 +16,55 @@
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     padding: 20px;
 }
+
 .nav-title {
     display: flex;
     align-items: center;
     gap: 10px;
     justify-content: center;
 }
+
 .nav-title img {
     width: 30%;
 }
+
 .nav-title h1 {
     font-size: 2.5rem;
     font-weight: 700;
 }
+
 .pink {
     color: #FF42A5;
 }
+
 .nav-item ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .nav-item ul li {
     list-style: none;
     padding: 0px 20px;
     cursor: pointer;
 }
+
 .nav-item ul li:last-child {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
     padding: 12px;
 }
+
 /* ***Navbar Sexction End** */
 
 /* ***Banner Section Start*** */
-.banner{
+.banner {
     background-image: url('./asset/Group\ 14.png');
     background-repeat: no-repeat;
     background-position: left;
 }
-.banner{
+
+.banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,9 +72,11 @@
     padding: 50px 230px;
     gap: 200px;
 }
+
 .banner-text {
     max-width: auto;
 }
+
 .banner-text h2 {
     color: #0B0223;
     text-align: center;
@@ -83,18 +94,21 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .small-text {
     color: #534C64;
     font-size: .8rem;
     font-weight: 300;
     padding: 5px 0px;
 }
+
 .btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0px;
 }
+
 .btn-1 {
     display: inline-flex;
     padding: 12px 30px;
@@ -120,45 +134,54 @@
     background: #4EC5F7;
     cursor: pointer;
 }
+
 .banner-img {
     max-width: 50%;
 }
+
 .banner-img img {
     height: 100%;
     width: 100%;
 }
+
 /* ***Banner Section Ended*** */
 
 /* ***Online Section Start*** */
-.online-content{
+.online-content {
     text-align: center;
     padding: 30px 0px;
 }
+
 .content-title {
     color: #0B0223;
     font-size: 2.5rem;
     font-weight: 700;
     padding-bottom: 10px;
 }
+
 .pink-gray {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.online{
+
+.online {
     padding: 20px 200px;
     display: flex;
     gap: 2rem;
     justify-content: space-between;
 }
+
 .game-photo {
     text-align: center;
 }
+
 .game-photo .img-wrapper {
     position: relative;
     overflow: hidden;
 }
+
 .game-photo .overlay {
     position: absolute;
     top: -10%;
@@ -169,6 +192,7 @@
     transition: all .4s ease;
     opacity: 0;
 }
+
 .game-photo .social-link {
     position: absolute;
     top: 60%;
@@ -177,32 +201,39 @@
     transition: all .4s ease;
     opacity: 0;
 }
+
 .game-photo:hover .overlay {
     opacity: 1;
     top: 0;
 }
+
 .game-photo:hover .social-link {
     opacity: 1;
     top: 50%;
 }
-.social-link{
+
+.social-link {
     color: #F948B2;
     font-weight: 500;
     font-size: 1.2rem;
 }
-.social-link i{
-    color:#FFF;
+
+.social-link i {
+    color: #FFF;
     font-size: 1.8rem;
 }
+
 .content .small-text {
     margin-top: 15px;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
 }
-.img-wrapper img{
+
+.img-wrapper img {
     width: 250px;
     height: 300px;
 }
+
 /* ***Online Section Ended*** */
 
 
@@ -214,27 +245,33 @@
     align-items: center;
     padding: 10px 150px;
 }
+
 .play-text {
     max-width: 300px;
     padding-left: 100px;
 }
+
 .play-text .small-text {
     text-align: right;
 }
+
 .play-title {
     text-align: right;
     font-size: 2.2rem;
     font-weight: 700;
     padding-bottom: 10px;
 }
+
 .play-img {
     max-width: 500px;
     padding-left: 100px;
     padding-top: 50px;
 }
+
 .play-img>img {
     width: 100%;
 }
+
 .relative {
     position: relative;
     height: 200px;
@@ -242,9 +279,11 @@
     bottom: 170px;
     right: 70px;
 }
+
 .relative img {
     width: 100%;
 }
+
 /* ***Play Section Ended*** */
 
 
@@ -261,6 +300,7 @@
     position: relative;
     bottom: 80px;
 }
+
 .logo-text {
     display: flex;
     align-items: center;
@@ -268,14 +308,17 @@
     font-size: 1rem;
     transition: all ease-in 0.2s;
 }
+
 .logo-text:hover {
     border: 1px solid palevioletred;
     border-radius: 50px;
     background: #FFF;
     color: #F948B2;
     font-weight: 600;
-    padding:5px;
+    padding: 5px;
+    cursor: pointer;
 }
+
 /* ***Logo Section Ended*** */
 
 
@@ -288,6 +331,7 @@ footer {
     background: #0B0223;
     padding: 10px 200px;
 }
+
 .footer-title {
     display: flex;
     justify-content: center;
@@ -298,6 +342,9 @@ footer {
     font-size: 1.5rem;
     font-weight: 700;
 }
+.footer-title img{
+    width: 15%;
+}
 
 .text {
     text-align: center;
@@ -307,9 +354,11 @@ footer {
     align-items: flex-start;
     gap: 20px;
 }
+
 .text p {
     color: #FFF;
 }
+
 .icon {
     text-align: center;
     display: grid;
@@ -317,6 +366,7 @@ footer {
     padding: 10px 100px;
     align-items: flex-start;
 }
+
 .policy {
     text-align: center;
     display: grid;
@@ -324,18 +374,21 @@ footer {
     align-items: flex-start;
     padding: 10px 20px;
 }
+
 .policy p {
     color: rgba(255, 255, 255, 0.60);
 }
+
 .last-text {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* ***Footer Section Ended***  */
-/* .hide{
+.hide{
     display: none;
-} */
+}
 
 
 /* ***Media Query Start*** */
@@ -349,7 +402,7 @@ footer {
         padding-top: 10px;
         flex-direction: column;
     }
-    .nav-item ul li{
+    .nav-item ul li {
         padding-top: 15px;
     }
     .banner {
@@ -360,53 +413,60 @@ footer {
     .banner-img {
         max-width: 70%;
     }
-    .card {
-        grid-template-columns: 300px;
-        gap: 25px;
-        padding: 30px 0px;
+    .online {
+        padding: 10px 10px;
+        flex-direction: column;
     }
-
-
+    .game-photo .overlay {
+        left: 18%;
+        width: 64%;
+    }
     .play {
         gap: 20px;
         padding: 10px 10px;
         flex-direction: column;
     }
+
     .play-text {
         max-width: 340px;
         padding-left: 0px;
     }
+
     .play-title {
         text-align: center;
         font-size: 2rem;
         font-weight: 700;
         padding-bottom: 10px;
     }
+
     .play-text .small-text {
         text-align: center;
     }
+
     .play-img>img {
         width: 90%;
     }
+
     .relative {
         bottom: 110px;
         right: 50px;
     }
+
     .relative img {
         width: 80%;
     }
     .logo {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content:center;
-    gap: 20px;
-    bottom: 20px;
-    }
-    .logo-text{
-        font-size: .8rem;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 10px;
+        bottom: 10px;
     }
 
+    .logo-text {
+        font-size: .8rem;
+    }
     .footer-title {
         gap: 10px;
         font-size: 1rem;
@@ -433,5 +493,4 @@ footer {
     .last-text {
         flex-direction: column;
     }
-    
 }
