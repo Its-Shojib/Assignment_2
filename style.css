@@ -66,15 +66,10 @@
 
 .banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 4rem;
-    padding: 50px 230px;
-    gap: 200px;
-}
-
-.banner-text {
-    max-width: auto;
+    padding: 50px 200px;
+    gap: 20px;
 }
 
 .banner-text h2 {
@@ -121,7 +116,6 @@
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     cursor: pointer;
 }
-
 .btn-2 {
     display: inline-flex;
     padding: 12px 30px;
@@ -134,16 +128,13 @@
     background: #4EC5F7;
     cursor: pointer;
 }
-
 .banner-img {
     max-width: 50%;
 }
-
 .banner-img img {
     height: 100%;
     width: 100%;
 }
-
 /* ***Banner Section Ended*** */
 
 /* ***Online Section Start*** */
