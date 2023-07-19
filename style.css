@@ -255,6 +255,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 1rem;
 }
 
 .logo-text:hover {
@@ -329,9 +330,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
-/* .hide{
+.hide{
     display: none;
-} */
+}
 
 
 
@@ -355,5 +356,19 @@ footer {
     }
     .banner-img {
         max-width: 70%;
+    }
+
+
+
+    .logo {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content:center;
+    gap: 20px;
+    bottom: 20px;
+    }
+    .logo-text{
+        font-size: .8rem;
     }
 }
