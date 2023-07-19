@@ -276,7 +276,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 500px;
     background: #0B0223;
     padding: 10px 200px;
 }
@@ -370,5 +370,32 @@ footer {
     }
     .logo-text{
         font-size: .8rem;
+    }
+
+    .footer-title {
+        gap: 10px;
+        font-size: 1rem;
+    }
+    .text {
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0px;
+        align-items: center;
+        gap: 10px;
+    }
+    .icon {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 100px;
+        align-items: flex-start;
+        font-size: xx-large;
+        gap: 30px;
+    }
+    .policy {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .last-text {
+        flex-direction: column;
     }
 }
